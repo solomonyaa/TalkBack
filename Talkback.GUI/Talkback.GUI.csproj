@@ -1,0 +1,106 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BackgammonUtils\Images\BlackPlayer - Copy.png" />
+    <None Remove="BackgammonUtils\Images\BlackPlayer.png" />
+    <None Remove="BackgammonUtils\Images\BlackSpike.png" />
+    <None Remove="BackgammonUtils\Images\BlackSpikeMarked.png" />
+    <None Remove="BackgammonUtils\Images\BrownSpike.png" />
+    <None Remove="BackgammonUtils\Images\BrownSpikeMarked.png" />
+    <None Remove="BackgammonUtils\Images\MarkedBlack.png" />
+    <None Remove="BackgammonUtils\Images\MarkedBrown.png" />
+    <None Remove="BackgammonUtils\Images\OutBlackSpike.png" />
+    <None Remove="BackgammonUtils\Images\OutBrownSpike.png" />
+    <None Remove="BackgammonUtils\Images\WhitePlayer.png" />
+    <None Remove="config.json" />
+    <None Remove="images\backgammon_icon.jpg" />
+    <None Remove="images\Black_triangle.png" />
+    <None Remove="images\chat.jpg" />
+    <None Remove="images\menu_btn.png" />
+    <None Remove="images\offline_indicator.png" />
+    <None Remove="images\online_indicator.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="BackgammonUtils\Images\BlackPlayer - Copy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BackgammonUtils\Images\BlackPlayer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="BackgammonUtils\Images\BlackSpike.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BackgammonUtils\Images\BlackSpikeMarked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BackgammonUtils\Images\BrownSpike.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BackgammonUtils\Images\BrownSpikeMarked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BackgammonUtils\Images\MarkedBlack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BackgammonUtils\Images\MarkedBrown.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BackgammonUtils\Images\OutBlackSpike.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BackgammonUtils\Images\OutBrownSpike.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BackgammonUtils\Images\WhitePlayer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Black_triangle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\chat.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\menu_btn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\offline_indicator.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\online_indicator.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Talkback.Common\Talkback.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\backgammon_icon.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="BackgammonUtils\Tutorial.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

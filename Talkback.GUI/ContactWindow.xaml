@@ -1,0 +1,66 @@
+﻿<Window x:Class="Talkback.GUI.ContactWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Talkback.GUI"
+        mc:Ignorable="d"
+        Title="Sela Talkback" Height="400" Width="600">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Name="UsersPaneGrid" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Name="UserDetailsSP" Grid.Row="0">
+                <Label Margin="0px 5px 0px 10px" HorizontalAlignment="Center" Name="displayUsernameLbl" FontSize="12" FontWeight="Bold"/>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Image Margin="10px 0px 10px 0px" Height="25" Source="images\backgammon_icon.jpg"  Name="backgammonImg" MouseDown="backgammonImg_MouseLeftButtonDown"/>
+                    <Image MouseLeftButtonDown="chatImg_MouseLeftButtonDown" Margin="10px 0px 10px 0px" Height="25" Source="images\chat.jpg" Name ="chatImg"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Name="OnlineUsersSP" Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Online Contacts:"/>
+                    <Image MouseLeftButtonDown="collapseTriangle1_MouseLeftButtonDown" Name="collapseTriangle1" Margin="20px 0px" Height="10" Source=".\images\Black_triangle.png"/>
+                </StackPanel>
+                <ListBox x:Name="OnlineUsersLB" Height="137" >
+
+                </ListBox>
+            </StackPanel>
+            <StackPanel Name="OfflineUsersSP" Grid.Row="2">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Offline Contacts:"/>
+                    <Image MouseLeftButtonDown="collapseTriangle2_MouseLeftButtonDown" Name="collapseTriangle2" Margin="20px 0px" Height="10" Source=".\images\Black_triangle.png"/>
+                </StackPanel>
+
+                <ListBox Name="OfflineUsersLB" Height="137" >
+
+                </ListBox>
+            </StackPanel>
+
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ListView Name="msgSP"  Grid.Row="0">
+
+            </ListView>
+            <StackPanel Name="sendMsgPaneSP" Visibility="Collapsed" HorizontalAlignment="Stretch" Grid.Row="1" Orientation="Horizontal">
+                <TextBox x:Name="SendMsgTB" FontSize="15" TextAlignment="Justify" Width="350" Height="50" TextChanged="SendMsgTB_TextChanged"/>
+                <Button  Click="SendMsgBtn_Click" Margin="10" IsEnabled="False" x:Name="SendMsgBtn" Width="65" Content="Send"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</Window>

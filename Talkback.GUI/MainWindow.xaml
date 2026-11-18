@@ -1,0 +1,50 @@
+﻿<Window x:Class="Talkback.GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Talkback.GUI"
+        mc:Ignorable="d"
+        Title="Sela Talkback" Height="400" Width="600">
+    <Grid Name="MasterGrid" ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid Name="LayoutGrid" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Name="signInSP" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Width="432" Height="250">
+                <TextBlock Margin="10px" TextAlignment="Center" Text="Sign-in name:" Width="150"/>
+                <TextBox  Name="userNameTB" Height="25" Width="200" TextChanged="CredentialsEntered"/>
+                <TextBlock Margin="10px" TextAlignment="Center" Text="Password:"  />
+                <PasswordBox PasswordChanged="CredentialsEntered" Name="passwordTB" Width="200" Height="25"/>
+                <Button IsEnabled="False" Margin="10px" Content="Sign In" x:Name="signBtn" HorizontalAlignment="Center" Height="25" Width="160" Click="signBtn_Click"/>
+            </StackPanel>
+
+            <StackPanel Name="menuSP" Visibility="Visible" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0">
+                <Button BorderBrush="White"  Background="White" FontSize="14" Margin="10px 10px 0px 50px" Name="connectlbl" MouseLeftButtonDown="SignHandler" Content="Connect"/>
+                <TextBlock Visibility="Hidden" FontSize="15"  Margin="10px 10px 0px 0px" TextDecorations="Underline" Name="actionTB" Text="Actions:"/>
+                <Button BorderBrush="White" Background="White" Visibility="Hidden" MouseLeftButtonDown="msgLbl_clicked" FontSize="13" Margin="20px 10px 0px -10px"  Name="msgLbl" Content="Send Message"/>
+                <Button BorderBrush="White"  Background="White" Visibility="Hidden" MouseLeftButtonDown="backgammonLbl_clicked" FontSize="13" Margin="20px 10px 0px 0px"  Name="backgammonLbl" Content="Play Backgammon"/>
+
+                <TextBlock FontSize="15"  Margin="10px 10px 0px 0px" TextDecorations="Underline" Text="Help"/>
+                <Button BorderBrush="White" Background="White" MouseLeftButtonDown="htpLbl_clicked" FontSize="13" Margin="20px 10px 0px -10px"  Name="htpLbl" Content="How to Play"/>
+                <Button BorderBrush="White" Background="White" MouseLeftButtonDown="aboutLbl_clicked" FontSize="13" Margin="20px 10px 0px 0px"  Name="aboutLbl" Content="About" RenderTransformOrigin="-0.123,33.79"/>
+            </StackPanel>
+        </Grid>
+        <TextBlock  Margin="0px 10px 0px 0px" Width="100" TextAlignment="Center" HorizontalAlignment="Center" FontSize="15" Grid.Row="0" TextWrapping="Wrap" ><Run Text="Welcome to "/><Run FontWeight="Bold" Text="Sela Talkback "/><Run Text="Messaenger"/></TextBlock>
+        <Image MouseLeftButtonDown="menuBtn_MouseLeftButtonDown" Name="menuBtn" Margin="15,15,0,24" Source="images\menu_btn.png" Grid.Row="0" HorizontalAlignment="Left" Width="29"/>
+
+    </Grid>
+
+</Window>

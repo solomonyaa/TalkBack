@@ -1,0 +1,21 @@
+﻿Objective
+----------
+The object of Backgammon is to move your checkers around the board by rolling dice. The number rolled equals the number of points a checker can move. First, move all your checkers to your home board. Second, move all your checkers off the board.
+
+Game Play
+----------
+The game begins with each player rolling one die. The player with the higher number rolled gets to use both dice for the first move. Each dice is moved separately and can be moved forward to any point that is not blocked. When your opponent has two or more checkers on a point, that point is blocked. If the point has your own checkers, no checkers, or only one opponent checker, the point is open.
+When both dice are rolled with the same number, the player will move double. For example, if double threes are rolled, the player will move three points four times.
+When a player moves a checker onto a point that only has one opponent checker, the opponent’s checker is placed on the middle bar. Any checker on the middle bar has to be returned into play before making any other moves. A checker returns to the board on your farthest point. (i.e., the 24th point).
+
+Win
+----------
+Once a player’s checkers are all within his/her home board, he/she can begin removing checkers off the board. The first player to remove all of his/her checkers from the board wins the game.
+
+Rules
+----------
+If a higher number is rolled than you have while removing checkers from the board, the farthest checker is to be removed.
+If a player is unable to make a legal move with one or both dice, the roll is forfeited.
+If a player has no checkers off the board when his opponent has removed all of his checkers, it is known as a Gammon and is worth a double game.
+If a player still has a checker in his opponent’s home board or on the bar and his opponent has removed all of his checkers, it is known as a backgammon and is worth a triple game.
+

@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Talkback.Server", "TalkbackProject\Talkback.Server.csproj", "{2C9CB0D8-FD5E-40F8-A331-181C83865445}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Talkback.Common", "Talkback.Common\Talkback.Common.csproj", "{5596CE17-5FE8-4176-8E6C-5EC30600925E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Talkback.GUI", "Talkback.GUI\Talkback.GUI.csproj", "{32545C6B-FCA7-47BE-9DB9-2D39602F7361}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Talkback.Client", "Talkback.Client\Talkback.Client.csproj", "{7C484F9E-D43F-4138-A6F9-A14D76D545EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D255B735-C223-45AA-80BF-0128A3C20C6C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talkback.Console", "Talkback.Console\Talkback.Console.csproj", "{833BCB07-B7AA-4064-8CDB-5BBDA36F44CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C9CB0D8-FD5E-40F8-A331-181C83865445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C9CB0D8-FD5E-40F8-A331-181C83865445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C9CB0D8-FD5E-40F8-A331-181C83865445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C9CB0D8-FD5E-40F8-A331-181C83865445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5596CE17-5FE8-4176-8E6C-5EC30600925E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5596CE17-5FE8-4176-8E6C-5EC30600925E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5596CE17-5FE8-4176-8E6C-5EC30600925E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5596CE17-5FE8-4176-8E6C-5EC30600925E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32545C6B-FCA7-47BE-9DB9-2D39602F7361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32545C6B-FCA7-47BE-9DB9-2D39602F7361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32545C6B-FCA7-47BE-9DB9-2D39602F7361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32545C6B-FCA7-47BE-9DB9-2D39602F7361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C484F9E-D43F-4138-A6F9-A14D76D545EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C484F9E-D43F-4138-A6F9-A14D76D545EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C484F9E-D43F-4138-A6F9-A14D76D545EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C484F9E-D43F-4138-A6F9-A14D76D545EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{833BCB07-B7AA-4064-8CDB-5BBDA36F44CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833BCB07-B7AA-4064-8CDB-5BBDA36F44CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833BCB07-B7AA-4064-8CDB-5BBDA36F44CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833BCB07-B7AA-4064-8CDB-5BBDA36F44CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D281BF6-B120-4A7D-B6A6-ADC8343E9B5F}
+	EndGlobalSection
+EndGlobal

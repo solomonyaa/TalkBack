@@ -1,0 +1,5 @@
+1. Open the solution and rebuild.
+2. In the path "talkback-dev\TalkbackProject\bin\Debug\net5.0" type cmd & enter.
+3. Type "Talkback.Server.exe --urls http://localhost:1234" & enter.
+4. In the path "talkback-dev\TalkBack.Client\bin\Debug\net5.0 open Talkback.Client.exe.
+5. In the path "talkback-dev\Talkback.GUI\bin\Debug\net5.0-windows" open Talkback.GUI.exe
